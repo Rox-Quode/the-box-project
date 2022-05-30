@@ -6,10 +6,24 @@
 
 :root {
     --clr-icons: #929292;
-    --clr-text: #fff;
-    --clr-bg-dark: #242424;
-    --clr-bg-light: #3b3b3b;
-    --clr-accent: #ff7600;
+    /* --clr-text: #fff; */
+    /* --clr-text: #fffcf2; */
+    /* --clr-text: #f9f5f4; */
+    --clr-text: #04050a;
+
+    /* --clr-bg-dark: #242424; */
+    /* --clr-bg-dark: #252422; */
+    /* --clr-bg-dark: #04050a; */
+    --clr-bg-dark: #f9f5f4;
+
+    /* --clr-bg-light: #3b3b3b; */
+    /* --clr-bg-light: #403d39; */
+    /* --clr-bg-light: #3f3d3a; */
+    --clr-bg-light: #7c7872;
+
+    /* --clr-accent: #ff7600; */
+    --clr-accent: #e43755;
+    /* --clr-accent: #ca5166; */
 }
 
 body {
@@ -17,9 +31,15 @@ body {
     background-color: var(--clr-bg-dark);
     color: var(--clr-text);
     line-height: 1.5;
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Domine', serif;
+    font-weight: normal;
+}
 img {
     max-width: 100%;
 }
@@ -36,6 +56,8 @@ a.logo {
     background: transparent;
     color: var(--clr-text);
     font-size: 1.125rem;
+    font-family: 'Domine', serif;
+    font-weight: 500;
     padding: .5em;
     position: relative;
     align-self: start;
@@ -64,6 +86,7 @@ a.logo {
     color: var(--clr-accent);
     text-transform: uppercase;
     margin: 0;
+    padding-bottom: 2rem;
     line-height: 1;
     font-size: clamp(3rem, 10vw, 12rem);
 }
@@ -96,6 +119,12 @@ header {
 .nav__link:hover,
 .nav__link:focus {
     color: var(--clr-accent);
+}
+
+.primary-image {
+    /* opacity: 0.8; */
+    filter: grayscale(20%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .secondary-images {
     display: flex;
@@ -232,7 +261,7 @@ footer {
         grid-row: 1 / span 4;
         z-index: -1;
         height: 100%;
-        max-height: 500px;
+        max-height: 600px;
         width: min(100%, 1000px);
         object-fit: cover;
     }
