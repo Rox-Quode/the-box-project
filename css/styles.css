@@ -33,7 +33,7 @@ body {
     line-height: 1.5;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,7 +55,7 @@ a.logo {
     border: 0;
     background: transparent;
     color: var(--clr-text);
-    font-size: 1.125rem;
+    font-size: 1.4rem;
     font-family: 'Domine', serif;
     font-weight: 500;
     padding: .5em;
@@ -114,11 +114,12 @@ header {
     color: var(--clr-text);
     text-transform: capitalize;
     text-decoration: none;
+    font-size: 1.4rem;
 }
 
 .nav__link:hover,
 .nav__link:focus {
-    color: var(--clr-accent);
+    color: var(--clr-bg-dark);
 }
 
 .primary-image {
