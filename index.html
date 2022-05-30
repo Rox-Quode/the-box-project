@@ -6,19 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> The Box </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="main-grid">
         <header> 
-            <img class="logo" src="" alt="TB">
-            <nav class="nav">
-                <a href="#" class="nav__link"> Home </a>
+            <a class="logo" href="/index.html"> TB </a>
+             
+            <nav class="nav hide-sm">
                 <a href="#" class="nav__link"> About us</a>
                 <a href="#" class="nav__link"> Book </a>
                 <a href="#" class="nav__link"> Contact </a>
             </nav>
+            <div class="col-7 right show-sm">
+                <a class="hamburger-button"> &#9776; </a>
+              </div>    
         </header>
+        <div class="mobile-menu"> 
+            <nav> 
+              <a href="#"> About us </a>
+              <a href="#"> Book </a>
+              <a href="#"> Contact </a>
+            </nav>
+        </div>
 
         <main>
             <h1 class="title"> The Box </h1>
@@ -40,6 +51,7 @@
             </div>
         </footer>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
 </body>
 </html>
