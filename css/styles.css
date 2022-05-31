@@ -10,6 +10,7 @@
     /* --clr-text: #fffcf2; */
     /* --clr-text: #f9f5f4; */
     --clr-text: #04050a;
+    --clr-text-dm: #f9f5f4;
 
     /* --clr-bg-dark: #242424; */
     /* --clr-bg-dark: #252422; */
@@ -23,8 +24,23 @@
 
     /* --clr-accent: #ff7600; */
     --clr-accent: #e43755;
-    /* --clr-accent: #ca5166; */
+    /* --clr-accent: #ca5166;/#ec7388; */
 }
+/* :root[color-mode="light"] {
+    --clr-text: #04050a;
+    --clr-accent: #e43755;
+    --clr-bg-light: #f9f5f4;
+    --clr-bg-featured: #7c7872;
+
+    :root[color-mode="dark"] {
+    --clr-text: #f9f5f4;
+    --clr-bg-dark: #04050a; 
+    --clr-accent: #ec7388;
+    --clr-bg-featured: #a3a19c;
+    }
+    
+}*/
+
 
 body {
     margin: 1em;
@@ -49,6 +65,12 @@ a.logo {
     color: var(--clr-text);
     font-size: 2rem;
 }
+
+a.logo:hover,
+a.logo:focus {
+    opacity: 0.5;
+}
+
 .btn {
     cursor: pointer;
     display: inline-block;
@@ -119,12 +141,10 @@ header {
 
 .nav__link:hover,
 .nav__link:focus {
-    color: var(--clr-bg-dark);
+    color: var(--clr-text-dm);
 }
 
 .primary-image {
-    /* opacity: 0.8; */
-    filter: grayscale(20%);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .secondary-images {
@@ -144,7 +164,7 @@ footer {
 
 .social-link {
     color: var(--clr-accent); 
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .social-link:hover,
@@ -291,4 +311,64 @@ footer {
 @media(max-width: 48em) {
     .show-sm {display: block;}
     .hide-sm {display: none;}
+}
+
+/* Dark mode toggle */
+.dark-mode{
+    text-align: right;
+  }
+
+  .toggle-container{
+    display: inline-block;
+    text-align: left;
+    background-color: #252422;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 1.5rem;
+    padding: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, 
+                rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .toggle-ball {
+    display: inline-block;
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: white;
+    border-radius: 2rem;
+  }
+  
+  .toggle-container.dark-mode-active{
+    background-color: #d6ccc2;
+    text-align: right;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, 
+                rgba(255, 255, 255, 0.22) 0px 15px 12px;
+  }
+  
+  /* Dark Mode Active */
+  
+  .dark-mode-active {
+     background-color: #04050a;  
+     color: #f9f5f4;
+  }
+  
+.dark-mode-active .btn {
+    color: #f9f5f4;
+}
+
+.dark-mode-active .btn::after{
+    background-color: #ec7388;
+}
+  
+.dark-mode-active h1 {
+    color: #ec7388;
+}
+
+.dark-mode-active .social-link:hover,
+.social-link:focus {
+   color: #f9f5f4;
+}
+  
+.dark-mode-active .reduce-brightness-filter{
+    filter: brightness(0.6) saturate(1.25); 
 }
