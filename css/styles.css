@@ -113,13 +113,6 @@ a.logo:focus {
     font-size: clamp(3rem, 10vw, 12rem);
 }
 
-.location {
-    color: var(--clr-icons);
-    margin: 0;
-    font-size: 1.5;
-    margin-bottom: 1.5em;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -136,7 +129,7 @@ header {
     color: var(--clr-text);
     text-transform: capitalize;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .nav__link:hover,
@@ -220,7 +213,7 @@ footer {
     color: var(--clr-accent);
   }
 
-@media (min-width:800px) {
+@media (min-width:768px) {
     body {
         margin:0;
     }
@@ -252,6 +245,7 @@ footer {
         grid-template-columns: subgrid;
         grid-auto-rows: min-content;
         grid-auto-flow: dense;
+        padding-bottom: 2em;
     }
 
     main::after {
@@ -270,8 +264,7 @@ footer {
         grid-column: 1 / 3;
         grid-row: 1;
     }
-
-    .location,
+   
     .description {
         grid-column: 1 / 2;
         margin-right: 1em;
@@ -279,7 +272,7 @@ footer {
 
     .primary-image {
         grid-column: 2 / -1;
-        grid-row: 1 / span 4;
+        grid-row: 1 / span 2;
         z-index: -1;
         height: 100%;
         max-height: 600px;
@@ -314,16 +307,22 @@ footer {
 }
 
 /* Dark mode toggle */
-.dark-mode{
+/* .dark-mode{
     text-align: right;
+    position: fixed;
+    cursor: pointer;
+    right: 9rem;
+    top: 2.7rem;
+    z-index: 4;
   }
 
   .toggle-container{
     display: inline-block;
+    position: fixed;
     text-align: left;
     background-color: #252422;
-    height: 2rem;
-    width: 4rem;
+    height: 1.8rem;
+    width: 3.6rem;
     border-radius: 1.5rem;
     padding: 0.2rem;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, 
@@ -332,8 +331,8 @@ footer {
   
   .toggle-ball {
     display: inline-block;
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 1.4rem;
+    width: 1.4rem;
     background-color: white;
     border-radius: 2rem;
   }
@@ -343,11 +342,11 @@ footer {
     text-align: right;
     box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, 
                 rgba(255, 255, 255, 0.22) 0px 15px 12px;
-  }
+  } */
   
   /* Dark Mode Active */
   
-  .dark-mode-active {
+  /* .dark-mode-active {
      background-color: #04050a;  
      color: #f9f5f4;
   }
@@ -371,4 +370,4 @@ footer {
   
 .dark-mode-active .reduce-brightness-filter{
     filter: brightness(0.6) saturate(1.25); 
-}
+} */
